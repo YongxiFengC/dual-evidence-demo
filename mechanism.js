@@ -96,6 +96,8 @@ g+=reveal(tag(596,394,395,'把缺口与冲突，也留在证据里','teal'),4);
 const design=window.MotionDesign.scene(i);
 return '<svg viewBox="0 0 1080 480" xmlns="http://www.w3.org/2000/svg" aria-label="'+chapters[i]+'示意"><defs>'+['blue','teal','orange'].map(c=>'<marker id="arrow-'+c+'" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" class="arrow '+c+'"/></marker>').join('')+'<linearGradient id="coreGradient" x2="1" y2="1"><stop stop-color="#527fef"/><stop offset="1" stop-color="#24aca9"/></linearGradient></defs><g class="scene-root">'+design.back+g+design.front+'</g></svg>';
 }
+// Keep the established illustrations and technical detail cards reusable.
+if(window.StoryFilm){window.MechanismAssets={art,details,person,hot,card,text,bars,set,tag,trail,reveal,waveform};return;}
 const ease=x=>{x=Math.max(0,Math.min(1,x));return x*x*(3-2*x);};
 function updateVisual(t){
 $('#stage').classList.toggle('primer-stage',scene===0&&t<0);
