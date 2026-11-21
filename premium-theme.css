@@ -1,0 +1,47 @@
+/* Shared visual layer. Data, layout and animation timing remain unchanged. */
+:root{--ink:#202744;--muted:#65708b;--green:#087f82;--line:#e0e4f0;--paper:#f5f6fc;--orange:#d77542;--soft:#edf7f7;--blue:#6754d9;--teal:#159b97;color:var(--ink);background:var(--paper)}
+body{background:radial-gradient(ellipse at 4% 0%,#e4e5ff 0%,transparent 34%),radial-gradient(ellipse at 96% 12%,#dff5f3 0%,transparent 31%),#f5f6fc;color:var(--ink)}
+.header,.mg-header{background:#ffffffc9;border-bottom:1px solid #dfe3f1;backdrop-filter:blur(18px)}
+.brand,.page-intro h1{color:#202744}.brand-icon,.brand span,.brand-dot{color:#6c52dc}
+.nav nav a:hover,.mg-header>a:last-child,.text-link{color:#6650ce}
+.eyebrow,.page-intro p{color:#6650ce;font-weight:700}.hero h1 span,.section-heading h2 span{color:#5553c8}
+.hero-sub,.page-intro>span{color:#65708b}.role-symbol{color:#6a57d4}.role-path>span{color:#b5b0d6}
+.primary,.controls .play{background:linear-gradient(120deg,#5355ce,#7851d2);color:#fff;border-color:transparent;box-shadow:0 6px 18px #6251cd24}
+.primary:hover,.controls .play:hover{background:linear-gradient(120deg,#4548b8,#6540c0);box-shadow:0 8px 22px #6251cd35}
+.secondary{border-color:#d9dced;background:#fff}.secondary:hover{background:#f0effc}
+.workbench,.film{border:1px solid #dce0f1;box-shadow:0 20px 65px #363b7412,0 2px 6px #363b7406;border-radius:18px}
+.wb-top,.film-top{background:linear-gradient(110deg,#232c50,#3e3d79 65%,#514186);color:#fff;border-bottom:0}
+.wb-top-sub,.film-top>span{color:#e1dffb}.film-top .schematic{color:#cccde6}.film-top button,.tour-play{color:#f3f2ff;border-color:#ffffff40;background:#ffffff08}
+.live-dot,.local i{background:#6ee0cf}.case-switch{background:#f9f9fe}.case-switch button[aria-pressed=true]{background:#f0edfc;border-color:#b9ade9;box-shadow:inset 3px 0 #7760d7}
+.case-switch button b{color:#303958}.stage-strip button[aria-pressed=true]{color:#6552c8}.stage-strip button[aria-pressed=true] i{background:#6552c8;border-color:#6552c8}
+.guide-bar{background:linear-gradient(90deg,#f0edfc,#edf8f8)}.guide-bar p{color:#5e6883}.focus-panel{box-shadow:inset 0 3px #8871dc}
+.patient-panel{background:#fafbff}.wb-grid>section{background:#fff}.history-values>div{border-color:#e8ebf4}
+.history-times button{background:#edf0f8}.history-times button[aria-pressed=true]{background:#5f55c5;color:#fff}
+.decision-box{background:#fff3e9;border-color:#f0cfb6}.decision-box strong{color:#ad5c31}.decision-box>span:last-child{color:#936c52}
+select{background:#f8f9fd;border-color:#dce1f0}.view-toggle{background:#f0f0f9}.view-toggle button[aria-pressed=true]{color:#4b479c;background:#fff}
+.action-cell{background:#f5f7fc;border-color:#e1e5f0}.action-cell.in-range{background:#dff3ef;border-color:#a9d9cf}.action-cell.can-compare{border-color:#278f83}
+.action-cell.prob-mode{background:rgba(112,89,205,var(--heat));color:#262544}.action-cell.unsupported{background:repeating-linear-gradient(135deg,#fafbfe,#fafbfe 5px,#e9edf4 5px,#e9edf4 6px);color:#8a94a9}
+.action-cell.documented{border-color:#d77542;background:#fff0e3;color:#a8562e}.action-cell.comparator{border-color:#078e86;background:#c3eae3}.action-cell.inspected{box-shadow:0 0 0 3px #7360ce22}
+.scope-display,.template-card,.research-grid>article,.learning{border-color:#dce1ef;background:#fff;box-shadow:0 10px 32px #30386108}
+.microscope-section{background:linear-gradient(135deg,#eff0fc,#edf8f7)}.micro-cases button[aria-pressed=true]{background:#eeebfb;border-color:#ad9fdf}
+.set-row[aria-pressed=true]{background:#edf7f5}.set-explanation,.scope-summary{background:#f5f6fc}.template-tag{background:#eeebfa;color:#5e4ea8}
+.packet{background:#f7f7fe;border-color:#dce1ef}.packet-heading,.wb-bottom{background:#f8f9fd}.toast{background:#292e50}.footer{border-color:#dfe3f0}
+.mechanism-link{background:linear-gradient(120deg,#ededff,#f0f7ff 55%,#e6f5f2);border-color:#d4d6f0;box-shadow:0 7px 24px #4b4f9d0b}.mechanism-play{background:linear-gradient(135deg,#5a59cc,#8862d6);color:#fff}.mechanism-open{color:#6050b9}
+/* Animation: the same brand palette, with stable semantic colors. */
+.stage,.stage.ms-stage{background:radial-gradient(ellipse at 45% 30%,#eeedff,transparent 70%),#fafbff}.ms-paper,.ib-paper{fill:#f5f6fd}
+.ms-title,.ib-title,.story-headline,.dp-context-title{fill:#293457}.ms-kicker,.ms-foot,.ib-small,.story-legend{fill:#69758d}
+.ms-label,.ib-label,.dp-explain,.dp-context-question{fill:#374669}.ms-sub,.dp-name,.dp-axis-label{fill:#62718a}
+.ms-page,.ms-output,.dp-card,.ib-record,.ib-file-page,.story-case-bg{fill:#fff;stroke:#d0d6eb}.ms-page.back{fill:#e9eaf8}
+.ms-summary-halo{fill:#eae5ff;stroke:#c1b2ef}.ms-fragment,.ms-practice-bar,.ib-bar,.bar.blue{fill:#8470d7}
+.ms-dose,.ib-treatment,.dp-dose-knob{fill:#dc9466}.ms-trace,.ms-direction,.ms-bracket{stroke:#239c94}
+.ms-level.supported{fill:#2aa799;stroke:#0e897f}.ms-band,.story-range,.ib-range{fill:#b1e5d6;stroke:#54b9a5}.ms-chip{fill:#eeedf9;stroke:#d4cbed}
+.ms-link{stroke:#c1b5e1}.ms-link-dot{fill:#8170cc}.ms-axis{stroke:#cad1e4}
+.dp-vessel{fill:#f0f4fc;stroke:#cbd6eb}.dp-water{fill:#65b9be}.dp-treatment-icon{stroke:#6585c6}.dp-human-body,.dp-patient{fill:#e6ebfa;stroke:#bcc9e7}
+.dp-sepsis-label{fill:#536485}.dp-level-box{fill:#edf0fa;stroke:#c8d1e8}.dp-level-number{fill:#344966}
+.ib-state-card,.ib-response-card{fill:#f5fafc;stroke:#b9d8df}.ib-choice{fill:#f1eefa;stroke:#c1b4e4}.ib-correct{fill:#fff1e5;stroke:#e0b797}
+.ib-active .ib-state-card{stroke:#28a393}.ib-reference-title,.story-bottom{fill:#3f527c}
+.caption-row{background:linear-gradient(90deg,#f6f4ff,#f7fbff);border-top:1px solid #e4e3f2}.caption-row p{color:#354363}
+.chapters button[aria-pressed=true],.chapters button[aria-current=true]{background:#eeebfc;color:#5e4bb8;border-color:#c7b9ee}
+.notes,.detail{background:#fff;border-color:#dce0ef}.detail::backdrop{background:#17213d70;backdrop-filter:blur(5px)}
+.story-controls button[aria-pressed=true]{color:#5c4caf;background:#fff}.progress-track input{accent-color:#7360d4}.narration-meta{color:#69708c}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
