@@ -97,7 +97,7 @@ function visual(s,c,p){
  if(s.art!==3&&s.art!==5){
   if(mobile()){
    if(s.art===0)board.setAttribute('viewBox','0 0 540 740');
-   else if(s.art===1)board.setAttribute('viewBox','0 0 540 850');
+   else if(s.art===1)board.setAttribute('viewBox',`0 ${c.n===2?365:0} 540 460`);
    else{let f=(elapsed-s.start)/(sections[scene+1]?.start-s.start||TOTAL-s.start);const x=480*E(f);board.setAttribute('viewBox',`${reduce.matches?240:x} 0 600 480`);}
   }else board.setAttribute('viewBox','0 0 1080 480');
  }
