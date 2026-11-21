@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="从一次医生的治疗选择出发，跟随病历中的线索理解双视角复盘。"><title>你会怎样判断这次治疗选择？— Dual Evidence</title><link rel="stylesheet" href="mechanism.css"><link rel="stylesheet" href="motion-design.css"><link rel="stylesheet" href="story-opening.css"><link rel="stylesheet" href="narration.css?v=casemotion20261106"><link rel="stylesheet" href="intro-storyboard.css?v=casemotion20261106"><link rel="stylesheet" href="crowd-frequency.css?v=casemotion20261106"><script defer src="crowd-frequency.js?v=casemotion20261106"></script><script defer src="motion-design.js?v=casemotion20261106"></script><link rel="stylesheet" href="dose-primer.css?v=casemotion20261106"><script defer src="dose-primer.js?v=casemotion20261106"></script><script defer src="intro-storyboard.js?v=casemotion20261106"></script><script defer src="story-opening.js?v=casemotion20261106"></script><script defer src="narration.js?v=casemotion20261106"></script><script defer src="cue-flow.js?v=casemotion20261106"></script><link rel="stylesheet" href="mechanism-story.css?v=casemotion20261106"><script defer src="mechanism-story.js?v=casemotion20261106"></script><script defer src="mechanism.js?v=casemotion20261106"></script></head>
 <body>
-<header class="mg-header"><a href="index.html" class="brand"><span>◧</span> Dual Evidence.</a><a href="#about">关于演示</a></header>
+<header class="mg-header"><a href="index.html" class="brand"><span>◧</span> Dual Evidence.</a><a href="index.html#workbench">探索病例工作台</a></header>
 <main>
 <div class="page-intro"><p>AN INTERACTIVE EXPLAINER</p><h1>你会怎样判断医生的一次治疗选择？</h1><span>从一份病历开始，跟着线索往下看。</span></div>
 <section id="film" class="film" tabindex="0" aria-label="可交互算法机制动画">
@@ -13,10 +13,10 @@
 <div class="controls"><div class="play-controls"><button id="previous" aria-label="上一幕">←</button><button id="play" class="play">▶ 开始观看</button><button id="next" aria-label="下一幕">→</button><button id="restart" aria-label="从头播放">↺</button></div><span id="clock">00:00 / 01:26</span><label class="speed"><span>速度</span><select id="speed" aria-label="播放速度"><option value="0.75">0.75×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option></select></label></div>
 <nav id="chapters" class="chapters" aria-label="动画章节"></nav>
 </section>
-<div class="under-film"><span>播放看故事，暂停看机制。</span><a href="#about">虚构病例 · 机制交互演示</a></div>
+<div class="under-film"><span>播放看故事，暂停看机制。</span><a href="index.html#workbench">在去标识化病例中探索</a></div>
 <details class="notes transcript"><summary>阅读完整讲解稿</summary><div id="transcript"></div></details>
 <details class="notes"><summary>关于这段动画</summary><p>脓毒症定义参考 <a href="https://www.who.int/health-topics/sepsis/" target="_blank" rel="noopener">WHO</a>，临床背景参考 <a href="https://sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines" target="_blank" rel="noopener">Surviving Sepsis Campaign 指南</a>。是否补液、是否使用升压药及具体剂量，需结合患者情况判断。本页说明研究方法。</p><p>图形、轨迹与档位均为机制示意。一个联合 latent–Practice 模型、一个配套 GRU；不进行 latent 平均或多模型投票。点击画面中的节点查看对应定义。</p><p>历史记录动作用于训练监督；新病例的当前记录动作在参考生成后进入复盘比较。预测比较的解释限于模型支持，真实治疗效应还需要因果研究。完整的分支资格、目标细化和停止规则未在动画展开。</p><p>原创 SVG / CSS 动效，无外部素材或模型调用。键盘：左右箭头切幕，空格播放；系统减少动态效果设置会简化运动。</p></details>
 </main>
 <dialog id="detail" class="detail"><button id="close-detail" class="close-detail" aria-label="关闭机制说明">×</button><span id="detail-tag"></span><h2 id="detail-title"></h2><div id="detail-body"></div><button id="resume-detail" class="resume-detail">继续观看 →</button></dialog>
-<footer id="about">Dual-Evidence Treatment Review · 在线演示<br>本分享版仅含虚构病例与合成示意，不提供真实患者数据或临床诊疗建议。</footer>
+<footer id="about">Dual-Evidence Treatment Review · 在线演示<br>本动画使用虚构病例与合成示意；病例工作台展示去标识化研究切片。均不提供临床诊疗建议。</footer>
 </body></html>
