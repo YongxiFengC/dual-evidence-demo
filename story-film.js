@@ -15,7 +15,7 @@ const R=(s,at=0,until=99)=>`<g data-at="${at}" data-until="${until}">${s}</g>`;
 const card=(x,y,w,h,t,cls='sf-card')=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="20" class="${cls}"/>${T(x+w/2,y+h/2+7,t)}`;
 const svg=(body,label)=>`<svg viewBox="0 0 1080 480" xmlns="http://www.w3.org/2000/svg" aria-label="${label}"><rect width="1080" height="480" rx="12" class="sf-paper"/><defs><linearGradient id="sfGlow"><stop stop-color="#7845df"/><stop offset="1" stop-color="#11bba8"/></linearGradient></defs>${body}</svg>`;
 function custom(kind){
- if(kind==='timeline'||kind==='rewind')return window.OpeningStory.art();
+ if(kind==='timeline'||kind==='rewind')return window.OpeningStory.art(kind);
  if(kind==='overview')return svg(
   T(540,62,'双视角治疗复盘','sf-title')+R(A.person(540,205,1.1)+card(444,264,192,55,'同一份病历','sf-orange'),0)+
   R(`<path d="M440 240H395M685 240H640" class="sf-line"/>`+A.hot('practice',card(45,130,340,230,'Practice','sf-rule')+T(215,325,'历史选择常见吗？','sf-muted'),360,150,'查看 Practice 参考'),.45)+
